@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -120,28 +125,37 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="wawd-list">
             <li>
-              <img
-                src="img/studio/wawd/wawd-1.jpg"
-                width="370"
-                height="294"
-                alt="Людина працює за компьютером"
-              />
+<div class="wawd-botton-wrap">
+                <img
+                  src="img/studio/wawd/wawd-1.jpg"
+                  width="370"
+                  height="294"
+                  alt="Людина працює за компьютером"
+                />
+                <p class="wawd-bottom-text">Десктопні додатки</p>
+</div>
             </li>
             <li>
-              <img
-                src="img/studio/wawd/wawd-2.jpg"
-                width="370"
-                height="294"
-                alt="Людина працює за компьютером"
-              />
+<div class="wawd-botton-wrap">
+                <img
+                  src="img/studio/wawd/wawd-2.jpg"
+                  width="370"
+                  height="294"
+                  alt="Людина працює за компьютером"
+                />
+                <p class="wawd-bottom-text">Десктопні додатки</p>
+</div>
             </li>
             <li>
-              <img
-                src="img/studio/wawd/wawd-3.jpg"
-                width="370"
-                height="294"
-                alt="Людина працює за планшетом"
-              />
+<div class="wawd-botton-wrap">
+                <img
+                  src="img/studio/wawd/wawd-3.jpg"
+                  width="370"
+                  height="294"
+                  alt="Людина працює за планшетом"
+                />
+                <p class="wawd-bottom-text">Десктопні додатки</p>
+</div>
             </li>
           </ul>
         </div>
@@ -417,12 +431,17 @@
         </div>
       </div>
     </footer>
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="modal-close" type="button" data-modal-close><svg>
-          <use href="./img/icons.svg#icon-close-black-18dp-2-1"></use>
+        <button class="modal-close-button" type="button" data-modal-close><svg class="modal-close-icon" width="18" height="18">
+          <use href="./img/close-black-icon.svg#icon-close-black"></use>
         </svg></button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
